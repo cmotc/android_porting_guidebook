@@ -30,4 +30,7 @@ emphasize that in the case of any program where a proprietary component is the
 only option, the inclusion of these instructions is only so they may be used to
 implement a fully-free version when or wherever it is legal and possible.  
 
+If you want to give some money to help with this project, you can do so via
+Bitcoin. 
 
+12r5qD85GMSkBMj7KYDW3BDw89ZRCWWj5E

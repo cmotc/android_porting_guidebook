@@ -11,6 +11,7 @@ Part One : The Android Build Environment
    * envsetup.sh
    * breakfast, brunch, lunch
    * Makefiles, .mk, make and mka
+   * Building a basic ROM
 
 Part Two : Gathering Device Information
 ---------------------------------------

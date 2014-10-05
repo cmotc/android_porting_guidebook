@@ -140,6 +140,10 @@ Optimus Logic.
           <project name="omr87169/android_vendor_lge_l35g" path="vendor/lge/l35g" remote="github" revision="2.3.7" />
         </manifest>
 
+####What Else Can I Do With Manifests?
+
+
+
 Advanced Guide
 --------------
 

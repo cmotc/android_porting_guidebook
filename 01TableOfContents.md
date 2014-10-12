@@ -10,8 +10,8 @@ Part One : The Android Build Environment
    * [repo](https://github.com/omr87169/android_porting_guidebook/blob/master/01PartOne/05PartOneRepo.md)
    * [envsetup.sh](https://github.com/omr87169/android_porting_guidebook/blob/master/01PartOne/06PartOneEnvsetup.md)
    * [breakfast, brunch, lunch](https://github.com/omr87169/android_porting_guidebook/blob/master/01PartOne/07PartOneMeals.md)
-   * [Makefiles, .mk, make and mka]](https://github.com/omr87169/android_porting_guidebook/blob/master/01PartOne/08PartOneMake.md)
-   * [Building a basic ROM]](https://github.com/omr87169/android_porting_guidebook/blob/master/01PartOne/09PartOneTestBuild.md)
+   * [Makefiles, .mk, make and mka](https://github.com/omr87169/android_porting_guidebook/blob/master/01PartOne/08PartOneMake.md)
+   * [Building a basic ROM](https://github.com/omr87169/android_porting_guidebook/blob/master/01PartOne/09PartOneTestBuild.md)
 
 Part Two : Gathering Device Information
 ---------------------------------------

@@ -8,10 +8,10 @@ Part One : The Android Build Environment
    * Fedora, Redhat Setup
    * OSX Setup
    * [repo](https://github.com/omr87169/android_porting_guidebook/blob/master/01PartOne/05PartOneRepo.md)
-   * envsetup.sh
-   * breakfast, brunch, lunch
-   * Makefiles, .mk, make and mka
-   * Building a basic ROM
+   * [envsetup.sh](https://github.com/omr87169/android_porting_guidebook/blob/master/01PartOne/06PartOneEnvsetup.md)
+   * [breakfast, brunch, lunch](https://github.com/omr87169/android_porting_guidebook/blob/master/01PartOne/07PartOneMeals.md)
+   * [Makefiles, .mk, make and mka]](https://github.com/omr87169/android_porting_guidebook/blob/master/01PartOne/08PartOneMake.md)
+   * [Building a basic ROM]](https://github.com/omr87169/android_porting_guidebook/blob/master/01PartOne/09PartOneTestBuild.md)
 
 Part Two : Gathering Device Information
 ---------------------------------------
@@ -57,8 +57,9 @@ Part Seven : Debugging Compilation Errors
 
 Part Eight : Compiling a Kernel
 -------------------------------
-   * 
-   * 
+   * Kernel Hacking for people some would say probably shouldn't be doing it.
+   * Setting up Automated Kernel Building for Cyanogenmod 10 or greater
+   * Backporting Kernels for devices
    * 
    * 
 

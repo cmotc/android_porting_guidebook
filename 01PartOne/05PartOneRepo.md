@@ -1,5 +1,5 @@
-An overly detailed guide to repo
-================================
+An overly detailed guide to repo, manifests, and assembling your port
+=====================================================================
 
 Quick Setup
 -----------
@@ -60,11 +60,20 @@ upload the folder to github and add it to the the local_manifests folder. There
 isn't really any standard way of naming the files under the local_manifests
 folder, but I use (device codename).xml.  
 
-   * project.list :  
+   * project.list : Your project.list file is automatically generated when you
+sync your source files using repo. It just lists the names of all the packages
+in your source tree. You should probably not alter this file or it's contents.  
 
-   * projects :  
+   * projects : The projects folder contains the git resource data downloaded by
+your manifests. These are the actual copies of the files, as opposed to the
+symbolic links(shortcuts) to the files which appear in the working source tree.
+This is so you can delete your entire working tree, type repo sync, and retrieve
+the last copy of each piece of software in your manifests.
+You should probably never edit them.  
 
-   * project-objects :  
+   * project-objects : The project-objects folder is similar to the projects
+folder in that it contains git resource data, but it's used to download 
+app-related git repositories instead of system related git repositories.  
 
    * repo : This is where the copy of the repo application used for your source
 tree is stored. You will probably never need to mess with the files in this
@@ -79,7 +88,9 @@ It will take an annoyingly long-ass time. Just run
 
         repo sync
 
-and watch it go.
+and watch it go. The good news, however, is that it will only take a long time
+the first time. Every subsequent time, it only downloads the changes between the
+files, which will only take a few minutes.
 
 ###Using Manifests to Import Supplemental Repositories
 Manifests are used to add and remove repositories from your personal copy of the

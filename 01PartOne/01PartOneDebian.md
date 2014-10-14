@@ -274,16 +274,17 @@ A one-time script which does all this for you
         APT::Default-Release "wheezy";
         " > /etc/apt/apt.conf
         apt-get update && apt-get dist-upgrade
-        echo '#! /bin/sh
-        sudo mount proc ~/android/system/proc -t proc
-        sudo mount sysfs ~/android/system/sys -t sysfs
-        sudo mount --bind /dev/pts ~/android/system/dev/pts
-        sudo mount --bind ~/android/system/dev /dev
-        sudo cp /proc/mounts ~/android/system/etc/mtab
-        sudo cp /etc/hosts ~/android/system/etc/hosts
-        sudo chroot ~/android/system/ /bin/sh -c "cd /home/android && bash && CROSS_COMPILE=/home/android/android-ndk-r10/arm-linux-androideabi-4.7/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc & echo "success""
-        ' > ~/android/enter.sh
+        echo "#! /bin/sh
+        sudo mount proc ./system/proc -t proc
+        sudo mount sysfs ./system/sys -t sysfs
+        sudo mount --bind /dev/pts ./system/dev/pts
+        sudo mount --bind ./system/dev /dev
+        sudo cp /proc/mounts ./system/etc/mtab
+        sudo cp /etc/hosts ./system/etc/hosts
+        sudo chroot ./system/ /bin/sh -c "cd /home/android && bash -c 'source /home/enter.sh && bash' && echo 'success'"" > ~/android/enter.sh
         chmod +x ~/android/enter.sh
+        sudo chroot ./system/ echo "#! /bin/sh
+        export CROSS_COMPILE=/home/android/arm-linux-androideabi-4.7/prebuilt/linux-x86_64/bin/arm-linux-androideabi-" > /home/enter.sh
         cd ~/android/
         ./enter.sh
         exit

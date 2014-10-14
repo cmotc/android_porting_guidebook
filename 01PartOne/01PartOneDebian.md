@@ -99,11 +99,11 @@ directory.
         echo "#! /bin/sh
         sudo mount proc ./system/proc -t proc
         sudo mount sysfs ./system/sys -t sysfs
-        sudo mount --bind /dev/pts ./system/dev/pts
-        sudo mount --bind ./system/dev /dev
+        sudo mount -o bind /dev/pts ./system/dev/pts
+        sudo mount -o bind /dev ./system/dev
         sudo cp /proc/mounts ./system/etc/mtab
         sudo cp /etc/hosts ./system/etc/hosts
-        sudo chroot ./system/ /bin/sh -c "cd /home/android && bash -c 'source /home/enter.sh && bash' && echo 'success'"" > ~/android/enter.sh
+        sudo chroot ./system/ /bin/sh -c "cd /home/android && bash -c 'source /home/enter.sh && bash' && echo 'success'" > ~/android/enter.sh
 
 Make the file executable.  
 
@@ -111,7 +111,7 @@ Make the file executable.
 
 Enter the chroot and create the stage2 enter.sh file
 
-        echo "#! /bin/sh
+        sudo chroot ./system/ echo "#! /bin/sh
         export CROSS_COMPILE=/home/android/arm-linux-androideabi-4.7/prebuilt/linux-x86_64/bin/arm-linux-androideabi-" > /home/enter.sh
 
 ####Finally, let's review the workflow for those new scripts.  
@@ -277,11 +277,11 @@ A one-time script which does all this for you
         echo "#! /bin/sh
         sudo mount proc ./system/proc -t proc
         sudo mount sysfs ./system/sys -t sysfs
-        sudo mount --bind /dev/pts ./system/dev/pts
-        sudo mount --bind ./system/dev /dev
+        sudo mount -o bind /dev/pts ./system/dev/pts
+        sudo mount -o bind /dev ./system/dev
         sudo cp /proc/mounts ./system/etc/mtab
         sudo cp /etc/hosts ./system/etc/hosts
-        sudo chroot ./system/ /bin/sh -c "cd /home/android && bash -c 'source /home/enter.sh && bash' && echo 'success'"" > ~/android/enter.sh
+        sudo chroot ./system/ /bin/sh -c "cd /home/android && bash -c 'source /home/enter.sh && bash' && echo 'success'" > ~/android/enter.sh
         chmod +x ~/android/enter.sh
         sudo chroot ./system/ echo "#! /bin/sh
         export CROSS_COMPILE=/home/android/arm-linux-androideabi-4.7/prebuilt/linux-x86_64/bin/arm-linux-androideabi-" > /home/enter.sh

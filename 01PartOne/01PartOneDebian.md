@@ -97,17 +97,22 @@ Create a file containing the script to enter the chroot in the helper scripts
 directory.  
 
         echo "#! /bin/sh
-        sudo mount proc ~/android/system/proc -t proc
-        sudo mount sysfs ~/android/system/sys -t sysfs
-        sudo mount --bind /dev/pts ~/android/system/dev/pts
-        sudo mount --bind ~/android/system/dev /dev
-        sudo cp /proc/mounts ~/android/system/etc/mtab
-        sudo cp /etc/hosts ~/android/system/etc/hosts
-        sudo chroot ~/android/system/ /bin/sh -c "cd /home/android && bash && CROSS_COMPILE=/home/android/arm-linux-androideabi-4.7/prebuilt/linux-x86_64/bin/arm-linux-androideabi- & echo "success ""
-        " > ~/android/enter.sh
+        sudo mount proc ./system/proc -t proc
+        sudo mount sysfs ./system/sys -t sysfs
+        sudo mount --bind /dev/pts ./system/dev/pts
+        sudo mount --bind ./system/dev /dev
+        sudo cp /proc/mounts ./system/etc/mtab
+        sudo cp /etc/hosts ./system/etc/hosts
+        sudo chroot ./system/ /bin/sh -c "cd /home/android && bash -c 'source /home/enter.sh && bash' && echo 'success'"" > ~/android/enter.sh
+
 Make the file executable.  
 
         chmod +x ~/android/enter.sh
+
+Enter the chroot and create the stage2 enter.sh file
+
+        echo "#! /bin/sh
+        export CROSS_COMPILE=/home/android/arm-linux-androideabi-4.7/prebuilt/linux-x86_64/bin/arm-linux-androideabi-" > /home/enter.sh
 
 ####Finally, let's review the workflow for those new scripts.  
 To use the enter.sh script, you just change directory to the helper scripts
@@ -116,6 +121,7 @@ password.
 
         cd ~/android/
         ./enter.sh
+        source build/envsetup.sh
 
 ####Exit the chroot build environment
 Leave the chroot.  

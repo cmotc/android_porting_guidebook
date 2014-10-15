@@ -13,6 +13,9 @@
         target.editor = this;
         this.update();
       }
+      function ReWriteGetRaw(link){
+        return link;
+      }
       function GetFromPath(path){
         var client = new XMLHttpRequest();
         client.open('GET', path);

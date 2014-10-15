@@ -8,7 +8,7 @@
     <script>
       function RenderGot(string, target) {
         this.update = function () {
-          target.innerHTML = markdown.toHTML(writestring);
+          target.innerHTML = markdown.toHTML(string);
         };
         target.editor = this;
         this.update();

@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <textarea id="text-input" oninput="this.editor.update()"
-              rows="6" cols="60">Type **Markdown** here.</textarea>
-    <div id="preview"> </div>
+    <div id="Header"> </div>
+    <div id="Page"> </div>
+    <div id="Contents"> </div>
     <script src="lib/markdown.js"></script>
     <script>
-      function Editor(input, preview) {
+      function RenderGot(path, target) {
+        //Retrieve string from file on server
+        //writestring=contents/of/file/at/path
         this.update = function () {
-          preview.innerHTML = markdown.toHTML(input.value);
+          preview.innerHTML = markdown.toHTML(writestring);
         };
-        input.editor = this;
+        target.editor = this;
         this.update();
       }
       var $ = function (id) { return document.getElementById(id); };
-      new Editor($("text-input"), $("preview"));
+      new RenderGot("01TableOfContents.md", $("Contents"));
     </script>
   </body>
 </html>

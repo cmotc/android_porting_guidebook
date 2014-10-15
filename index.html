@@ -16,8 +16,9 @@
       function GetFromPath(path){
         var client = new XMLHttpRequest();
         client.open('GET', path);
+        var md;
         client.onreadystatechange = function() {
-          var md = client.responseText;
+          md = client.responseText;
         }
         client.send();
         return md;

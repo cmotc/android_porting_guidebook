@@ -24,7 +24,9 @@
         return md;
       }
       var $ = function (id) { return document.getElementById(id); };
-      new RenderGot(GetFromPath("01TableOfContents.md"), $("Contents"));
+//      new RenderGot(GetFromPath(ReWriteGetRaw("00AndroidPortingGuidebook.md")), $("Header"));
+//      new RenderGot(GetFromPath(ReWriteGetRaw("")), $("Page"));
+      new RenderGot(GetFromPath(ReWriteGetRaw("https://raw.githubusercontent.com/cmotc/android_porting_guidebook/gh-pages/01TableOfContents.md")), $("Contents"));
     </script>
   </body>
 </html>

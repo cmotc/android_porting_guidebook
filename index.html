@@ -6,17 +6,24 @@
     <div id="Contents"> </div>
     <script src="lib/markdown.js"></script>
     <script>
-      function RenderGot(path, target) {
-        //Retrieve string from file on server
-        //writestring=contents/of/file/at/path
+      function RenderGot(string, target) {
         this.update = function () {
           preview.innerHTML = markdown.toHTML(writestring);
         };
         target.editor = this;
         this.update();
       }
+      function GetFromPath(path){
+        var client = new XMLHttpRequest();
+        client.open('GET', path);
+        client.onreadystatechange = function() {
+          var md = client.responseText;
+        }
+        return md;
+      }
+client.send();
       var $ = function (id) { return document.getElementById(id); };
-      new RenderGot("01TableOfContents.md", $("Contents"));
+      new RenderGot(GetFromPath("01TableOfContents.md"), $("Contents"));
     </script>
   </body>
 </html>

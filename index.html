@@ -19,9 +19,9 @@
         client.onreadystatechange = function() {
           var md = client.responseText;
         }
+        client.send();
         return md;
       }
-client.send();
       var $ = function (id) { return document.getElementById(id); };
       new RenderGot(GetFromPath("01TableOfContents.md"), $("Contents"));
     </script>

@@ -3,15 +3,15 @@ Android Porting Guidebook
 
 Part One : The Android Build Environment
 ----------------------------------------
-   * [Debian, Ubuntu Setup](https://github.com/omr87169/android_porting_guidebook/blob/master/01PartOne/01PartOneDebian.md)
+   * [Debian, Ubuntu Setup](https://github.com/cmotc/android_porting_guidebook/blob/master/01PartOne/01PartOneDebian.md)
    * Windows, VirtualBox, Debian Setup
    * Fedora, Redhat Setup
    * OSX Setup
-   * [repo](https://github.com/omr87169/android_porting_guidebook/blob/master/01PartOne/05PartOneRepo.md)
-   * [envsetup.sh](https://github.com/omr87169/android_porting_guidebook/blob/master/01PartOne/06PartOneEnvsetup.md)
-   * [breakfast, brunch, lunch](https://github.com/omr87169/android_porting_guidebook/blob/master/01PartOne/07PartOneMeals.md)
-   * [Makefiles, .mk, make and mka](https://github.com/omr87169/android_porting_guidebook/blob/master/01PartOne/08PartOneMake.md)
-   * [Building a basic ROM](https://github.com/omr87169/android_porting_guidebook/blob/master/01PartOne/09PartOneTestBuild.md)
+   * [repo](https://github.com/cmotc/android_porting_guidebook/blob/master/01PartOne/05PartOneRepo.md)
+   * [envsetup.sh](https://github.com/cmotc/android_porting_guidebook/blob/master/01PartOne/06PartOneEnvsetup.md)
+   * [breakfast, brunch, lunch](https://github.com/cmotc/android_porting_guidebook/blob/master/01PartOne/07PartOneMeals.md)
+   * [Makefiles, .mk, make and mka](https://github.com/cmotc/android_porting_guidebook/blob/master/01PartOne/08PartOneMake.md)
+   * [Building a basic ROM](https://github.com/cmotc/android_porting_guidebook/blob/master/01PartOne/09PartOneTestBuild.md)
 
 Part Two : Gathering Device Information
 ---------------------------------------
@@ -30,8 +30,8 @@ Part Three : Manifests, git and Github
 
 Part Four : Extracting Proprietary Drivers
 ------------------------------------------
-   * [How to use dmesg to examine your hardware](https://github.com/omr87169/android_porting_guidebook/blob/master/04PartFour/01PartFourHowTodmesg.md)
-   * [How to Build a recovery.fstab By Cross-Referencing Information about your partition table.](https://github.com/omr87169/android_porting_guidebook/blob/master/04PartFour/02PartFourHowToXRefPart.md)
+   * [How to use dmesg to examine your hardware](https://github.com/cmotc/android_porting_guidebook/blob/master/04PartFour/01PartFourHowTodmesg.md)
+   * [How to Build a recovery.fstab By Cross-Referencing Information about your partition table.](https://github.com/cmotc/android_porting_guidebook/blob/master/04PartFour/02PartFourHowToXRefPart.md)
    * The /system/lib directory
    * Researching proprietary drivers
    * Finding similar devices

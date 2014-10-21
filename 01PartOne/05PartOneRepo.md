@@ -153,6 +153,12 @@ Optimus Logic.
 
 ####What Else Can I Do With Manifests?
 
+Lots of stuff. Manifests are integral to how Android is built from source and
+knowing how to manipulate them will help you build custom Android and 
+Android-Like Operating Systems for your device. For instance, you can use them
+to add system apps to your ROM, remove unwanted pieces from ROM's, try out
+experimental kernels and drivers.
+
 
 
 Advanced Guide

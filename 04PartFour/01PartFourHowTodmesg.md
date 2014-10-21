@@ -91,7 +91,7 @@ driver.
 But, on an even slightly better phone(like the Samsung Galaxy Centura) a line
 like this will reveal the wireless card.
 
-        <6>[   34.082345] ADDRCONF(NETDEV_UP): wlan0'Card type will be here': link is not ready
+        <7>[  775.718946] ath6kl: wmi tx id 1 len 53 flag 0
 
 Power Tools for use with dmesg, the Advantages of Busybox
 =========================================================

@@ -31,7 +31,7 @@ Part Three : Manifests, git and Github
 Part Four : Extracting Proprietary Drivers
 ------------------------------------------
    * [How to use dmesg to examine your hardware](https://github.com/omr87169/android_porting_guidebook/blob/master/04PartFour/01PartFourHowTodmesg.md)
-   * [How to Build a recovery.fstab By Cross-Referencing Information about your partition table.](https://github.com/omr87169/android_porting_guidebook/blob/master/04PartFour/01PartFourHowToXRefPart.md)
+   * [How to Build a recovery.fstab By Cross-Referencing Information about your partition table.](https://github.com/omr87169/android_porting_guidebook/blob/master/04PartFour/02PartFourHowToXRefPart.md)
    * The /system/lib directory
    * Researching proprietary drivers
    * Finding similar devices

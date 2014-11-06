@@ -27,6 +27,8 @@ Part Three : Manifests, git and Github
    * Where can I host my git Repositories
    * repo Revisited, manifest.xml
    * Using Local Manifests
+   * [A simple manifest project: Replace ClockWorkMod with Team Win Recovery Project](https://github.com/cmotc/android_porting_guidebook/blob/master/03PartThree/05PartThreeCWMtoTWRP.md)
+   * An Absurdling Exhastive Breakdown of manifest.xml, Every Single Package In Brief
 
 Part Four : Extracting Proprietary Drivers
 ------------------------------------------

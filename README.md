@@ -8,6 +8,8 @@ offerings. When completed, I want this book to bring it's readers from near-zero
 knowledge about Android porting or Linux Kernel hacking to being able to
 successfully port an unsupported device to a custom ROM of his or her choice.  
 
+And I mean really, really fucking baby step it.
+
 Devices used during the composition of this book include, but are not limited,
 the Qualcomm ZTE Force(hayes, aurora), the Samsung Galaxy Centura
 (SCH-S738YBATFN), and the LGE Optimus Logic(LG-L35G).  

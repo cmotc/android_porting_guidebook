@@ -69,7 +69,7 @@ going to wind up with an unfixable device.
 So go carefully forward.
 
 And one final note, please write documentation and put it online somewhere. And
-use git, for fuckssake.
+use git.
 
 Without Further Ado
 -------------------
@@ -233,7 +233,8 @@ two of them and read the flags, but do not edit them.
 
 And here is the contents of the msm_defconfig. I'm not going to go into what
 each of them means because frankly, I've got no damned idea about 2/3rds of 
-them.
+them. What I do know is that using this is way easier than trying to manually
+set all the Qualcomm kernel configuration options with 'make menuconfig'.
 
         CONFIG_EXPERIMENTAL=y                              CONFIG_MTD=y                                CONFIG_VIDEO_OUTPUT_CONTROL=y
         CONFIG_IKCONFIG=y                                  CONFIG_MTD_PARTITIONS=y                     CONFIG_FB=y
@@ -263,7 +264,24 @@ them.
         # CONFIG_INET_DIAG is not set                      CONFIG_I2C=y
         # CONFIG_IPV6 is not set                           # CONFIG_HWMON is not set
 
-So let's take this step-by-step.
+So let's take this step-by-step. First, export your architecture and cross
+compiler variables.
+
+        export ARCH=arm
+        export CROSS_COMPILE=$HOME/.bin/android-ndk-r10d/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-
+
+Next, load the minimal defconfig you need. To do this, use the command
+
+        make path/to/defconfig/file
+
+For example, with the same Qualcomm MSM defconfig from before, the command you 
+need to execute is
+
+        make arch/arm/configs/msm_defconfig
+
+This will create a hidden file at the root of your Kernel source tree named
+.config. If you were to compile your kernel right now by typing the "make"
+command it would compile according to those configuration settings.
 
 ###Part Three: Fixing Compilation Errors
 

@@ -264,24 +264,29 @@ set all the Qualcomm kernel configuration options with 'make menuconfig'.
         # CONFIG_INET_DIAG is not set                      CONFIG_I2C=y
         # CONFIG_IPV6 is not set                           # CONFIG_HWMON is not set
 
+####Set Up Your Environment
 So let's take this step-by-step. First, export your architecture and cross
 compiler variables.
 
         export ARCH=arm
         export CROSS_COMPILE=$HOME/.bin/android-ndk-r10d/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-
 
-Next, load the minimal defconfig you need. To do this, use the command
+####Load Your Minimal defconfig
+Now, load the minimal defconfig you need. To do this, use the command
 
-        make path/to/defconfig/file
+        make defconfig
 
 For example, with the same Qualcomm MSM defconfig from before, the command you 
 need to execute is
 
-        make arch/arm/configs/msm_defconfig
+        make msm_defconfig
 
 This will create a hidden file at the root of your Kernel source tree named
 .config. If you were to compile your kernel right now by typing the "make"
 command it would compile according to those configuration settings.
+
+####Make the changes required to power your hardware
+
 
 ###Part Three: Fixing Compilation Errors
 

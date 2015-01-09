@@ -11,8 +11,8 @@ successfully port an unsupported device to a custom ROM of his or her choice.
 And I mean really, really fucking baby step it.
 
 Devices used during the composition of this book include, but are not limited,
-the Qualcomm ZTE Force(hayes, aurora), the Samsung Galaxy Centura
-(SCH-S738YBATFN), and the LGE Optimus Logic(LG-L35G).  
+the ZTE Force(hayes, aurora), the Samsung Galaxy Centura (SCH-S738YBATFN),
+and the LGE Optimus Logic(LG-L35G).  
 
 On Free, Libre, and Open-Source Software:
 -----------------------------------------

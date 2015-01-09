@@ -26,7 +26,9 @@ involved with their development. Eventually, a lot of us learned from [Linux Fro
 you port AOSP, CyanogenMod, Replicant, etc to your device\)how Linux systems 
 were put together, and we learned to code, then we learned to code better, and 
 administer software, and all kinds of cool stuff. It's in that spirit of Free 
-Software, personal freedom, and ownership that this book is written. There are
+Software, personal freedom, and ownership that this book is written. I would 
+even go so far as to say that it attempts to continue in the spirit of Linux 
+from Scratch, which has become a hacker rite-of-passage for many. There are
 hundreds of millions of potential enthusiasts who could extend the hardware and
 upstream support of the billions of devices produced and sold each year. These 
 tiny computers, in the pockets of thousansds of people all over the world, are
@@ -66,8 +68,61 @@ going to wind up with an unfixable device.
 
 So go carefully forward.
 
-And one final note, please write documentation and put it online somewhere.
+And one final note, please write documentation and put it online somewhere. And
+use git, for fuckssake.
 
 Without Further Ado
 -------------------
 
+###Part One: Get source code for your device from the Manufacturer
+The first, and easiest step is finding the best version of the 
+Android-Modifified Linux Kernel for your device. This depends on a couple of
+things. First, you need to pick a version of Linux compatible with the Android
+system you want to compile. Android uses the incremental, long-term stable
+releases of Linux for it's Kernel. To find a suitable Kernel version number for
+the ROM you want to make, you can consult the following table.
+
+Android/Replicant Version | CyanogenMod Version | Linux Kernel Version
+--------------------------|---------------------|---------------------
+    Gingerbread 2.3       |    CM7              |    2.6.35
+    Honeycomb 3.0         |    N/A              |    2.6.36
+   Ice Cream Sandwich 4.0 |    CM9              |    3.0.1
+    Jelly Bean 4.1        |    CM10             |    3.0.31
+    Jelly Bean 4.2        |    CM10.1           |    3.4.0
+    Jelly Bean 4.3        |    CM10.2           |    3.4.0
+    Kit Kat 4.4           |    CM11             |    3.4.0
+    Lollipop 5.0          |    CM12             |    3.1.4
+
+There is some, for lack of a better term, wiggle room here. One can usually
+regard these as minimum Kernel versions, which is a little helpful because
+*sometimes* a Free driver has been incorporated upstream after a certain Kernel
+version. That means you can use that driver instead of some proprietary firmware
+or other. More on that later. For now, let's focus on getting ahold of the code
+you need.
+
+####OK so this part kind of fucking sucks too
+Guess what?
+
+###Part Two: Fixing Compilation Errors
+
+  + 
+  + 
+  + 
+  + 
+  + 
+
+###Part Three: Backporting Stuff
+
+  + 
+  + 
+  + 
+  + 
+  + 
+
+###Part Four: Choose Open Source
+
+  + 
+  + 
+  + 
+  + 
+  + 

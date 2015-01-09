@@ -233,33 +233,33 @@ two of them and read the flags, but do not edit them.
 
 And here is the contents of the msm_defconfig
 
-        CONFIG_EXPERIMENTAL=y					CONFIG_MTD=y					CONFIG_VIDEO_OUTPUT_CONTROL=y
-        CONFIG_IKCONFIG=y					CONFIG_MTD_PARTITIONS=y				CONFIG_FB=y
-        CONFIG_IKCONFIG_PROC=y					CONFIG_MTD_CMDLINE_PARTS=y			CONFIG_FB_MODE_HELPERS=y
-        CONFIG_BLK_DEV_INITRD=y					CONFIG_MTD_CHAR=y				CONFIG_FB_TILEBLITTING=y
-        CONFIG_SLAB=y						CONFIG_MTD_BLOCK=y				CONFIG_FB_MSM=y
-        # CONFIG_BLK_DEV_BSG is not set				CONFIG_NETDEVICES=y				# CONFIG_VGA_CONSOLE is not set
-        # CONFIG_IOSCHED_DEADLINE is not set			CONFIG_DUMMY=y					CONFIG_FRAMEBUFFER_CONSOLE=y
-        # CONFIG_IOSCHED_CFQ is not set				CONFIG_NET_ETHERNET=y				CONFIG_NEW_LEDS=y
-        CONFIG_ARCH_MSM=y					CONFIG_SMC91X=y					CONFIG_LEDS_CLASS=y
-        CONFIG_MACH_HALIBUT=y					CONFIG_PPP=y					CONFIG_INOTIFY=y
-        CONFIG_NO_HZ=y						CONFIG_PPP_ASYNC=y				CONFIG_TMPFS=y
-        CONFIG_HIGH_RES_TIMERS=y				CONFIG_PPP_DEFLATE=y				CONFIG_MAGIC_SYSRQ=y
-        CONFIG_PREEMPT=y					CONFIG_PPP_BSDCOMP=y				CONFIG_DEBUG_KERNEL=y
-        CONFIG_AEABI=y						# CONFIG_INPUT_MOUSEDEV_PSAUX is not set	CONFIG_SCHEDSTATS=y
-        # CONFIG_OABI_COMPAT is not set				CONFIG_INPUT_EVDEV=y				CONFIG_DEBUG_MUTEXES=y
-        CONFIG_ZBOOT_ROM_TEXT=0x0				# CONFIG_KEYBOARD_ATKBD is not set		CONFIG_DEBUG_SPINLOCK_SLEEP=y
-        CONFIG_ZBOOT_ROM_BSS=0x0				# CONFIG_INPUT_MOUSE is not set			CONFIG_DEBUG_INFO=y
-        CONFIG_CMDLINE="mem=64M console=ttyMSM,115200n8"	CONFIG_INPUT_TOUCHSCREEN=y			CONFIG_DEBUG_LL=y
-        CONFIG_PM=y						CONFIG_INPUT_MISC=y
-        CONFIG_NET=y						# CONFIG_SERIO is not set
-        CONFIG_UNIX=y						CONFIG_VT_HW_CONSOLE_BINDING=y
-        CONFIG_INET=y						CONFIG_SERIAL_MSM=y
-        # CONFIG_INET_XFRM_MODE_TRANSPORT is not set		CONFIG_SERIAL_MSM_CONSOLE=y
-        # CONFIG_INET_XFRM_MODE_TUNNEL is not set		# CONFIG_LEGACY_PTYS is not set
-        # CONFIG_INET_XFRM_MODE_BEET is not set			# CONFIG_HW_RANDOM is not set
-        # CONFIG_INET_DIAG is not set				CONFIG_I2C=y
-        # CONFIG_IPV6 is not set				# CONFIG_HWMON is not set
+        CONFIG_EXPERIMENTAL=y                                   CONFIG_MTD=y                                    CONFIG_VIDEO_OUTPUT_CONTROL=y
+        CONFIG_IKCONFIG=y                                       CONFIG_MTD_PARTITIONS=y                         CONFIG_FB=y
+        CONFIG_IKCONFIG_PROC=y                                  CONFIG_MTD_CMDLINE_PARTS=y                      CONFIG_FB_MODE_HELPERS=y
+        CONFIG_BLK_DEV_INITRD=y                                 CONFIG_MTD_CHAR=y                               CONFIG_FB_TILEBLITTING=y
+        CONFIG_SLAB=y                                           CONFIG_MTD_BLOCK=y                              CONFIG_FB_MSM=y
+        # CONFIG_BLK_DEV_BSG is not set                         CONFIG_NETDEVICES=y                             # CONFIG_VGA_CONSOLE is not set
+        # CONFIG_IOSCHED_DEADLINE is not set                    CONFIG_DUMMY=y                                  CONFIG_FRAMEBUFFER_CONSOLE=y
+        # CONFIG_IOSCHED_CFQ is not set                         CONFIG_NET_ETHERNET=y                           CONFIG_NEW_LEDS=y
+        CONFIG_ARCH_MSM=y                                       CONFIG_SMC91X=y                                 CONFIG_LEDS_CLASS=y
+        CONFIG_MACH_HALIBUT=y                                   CONFIG_PPP=y                                    CONFIG_INOTIFY=y
+        CONFIG_NO_HZ=y                                          CONFIG_PPP_ASYNC=y                              CONFIG_TMPFS=y
+        CONFIG_HIGH_RES_TIMERS=y                                CONFIG_PPP_DEFLATE=y                            CONFIG_MAGIC_SYSRQ=y
+        CONFIG_PREEMPT=y                                        CONFIG_PPP_BSDCOMP=y                            CONFIG_DEBUG_KERNEL=y
+        CONFIG_AEABI=y                                          # CONFIG_INPUT_MOUSEDEV_PSAUX is not set        CONFIG_SCHEDSTATS=y
+        # CONFIG_OABI_COMPAT is not set                         CONFIG_INPUT_EVDEV=y                            CONFIG_DEBUG_MUTEXES=y
+        CONFIG_ZBOOT_ROM_TEXT=0x0                               # CONFIG_KEYBOARD_ATKBD is not set              CONFIG_DEBUG_SPINLOCK_SLEEP=y
+        CONFIG_ZBOOT_ROM_BSS=0x0                                # CONFIG_INPUT_MOUSE is not set                 CONFIG_DEBUG_INFO=y
+        CONFIG_CMDLINE="mem=64M console=ttyMSM,115200n8"        CONFIG_INPUT_TOUCHSCREEN=y                      CONFIG_DEBUG_LL=y
+        CONFIG_PM=y                                             CONFIG_INPUT_MISC=y
+        CONFIG_NET=y                                            # CONFIG_SERIO is not set
+        CONFIG_UNIX=y                                           CONFIG_VT_HW_CONSOLE_BINDING=y
+        CONFIG_INET=y                                           CONFIG_SERIAL_MSM=y
+        # CONFIG_INET_XFRM_MODE_TRANSPORT is not set            CONFIG_SERIAL_MSM_CONSOLE=y
+        # CONFIG_INET_XFRM_MODE_TUNNEL is not set               # CONFIG_LEGACY_PTYS is not set
+        # CONFIG_INET_XFRM_MODE_BEET is not set                 # CONFIG_HW_RANDOM is not set
+        # CONFIG_INET_DIAG is not set                           CONFIG_I2C=y
+        # CONFIG_IPV6 is not set                                # CONFIG_HWMON is not set
 
 
 So let's take this step-by-step.

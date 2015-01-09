@@ -129,7 +129,18 @@ right? Samsung doesn't even have Git repositories for their devices, you can
 find kernel sources, but Samsung's changes are *not* well documented and it's
 totally unclear whether any of the changes were upstreamed. The good news,
 however, is that various usually means Qualcomm, and while Qualcomm's had it's
-own issues with Open Source support, for right now,
+own issues with Open Source support, for right now, Code Aurora is a way better
+place to get your Kernel source code. In general, only bother with sources like
+Samsung when absolutely necessary. Professionals use version control. There I
+said it. I mean, I kid, they obviously use version control internally and most
+of these kernels aren't recieving updates, but that's like, exactly the problem.
+Prefer git and thank me later. 
+
+But the moral of that whole story is that the actual hardware may not, and in
+fact probably does not, correspond to the brand name. We've already figured it
+out back in Chapter Two, but now let's go into more detail as to what that
+means. In case you haven't done it already, go ahead and pull your build.prop
+from your device. You're going to need to look for a line
 
 ###Part Two: Fixing Compilation Errors
 

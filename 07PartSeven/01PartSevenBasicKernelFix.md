@@ -121,14 +121,15 @@ Nvidia                          | Tegra    | [Tegra Gitweb](http://nv-tegra.nvid
 Qualcomm                        | MSM/QSD  | [Code Aurora Forum](https://www.codeaurora.org/)
 Samsung                         | various  | [Samsung Open Source](http://opensource.samsung.com/)
 Texas Instruments               | OMAP     | [OmapZoom](http://www.omapzoom.com/) [Omappedia](http://www.omappedia.org/)
-Source:[http://wiki.cyanogenmod.org/w/Doc:_porting_intro#Getting_help_from_the_manufacturers_.26_vendors](http://wiki.cyanogenmod.org/w/Doc:_porting_intro#Getting_help_from_the_manufacturers_.26_vendors)  
+Source:[http://wiki.cyanogenmod.org/w/Doc:\_porting_intro#Getting\_help\_from\_the\_manufacturers\_.26\_vendors](http://wiki.cyanogenmod.org/w/Doc:_porting_intro#Getting_help_from_the_manufacturers_.26_vendors)  
 it can be a little hard to figure out what the hell to do. And check this out.
 Click that Samsung link up there and open it in a new tab. Now click the 
 CodeAurora forum link. Now click the Google source code link. Wildly disparate,
-right?
-
-
-
+right? Samsung doesn't even have Git repositories for their devices, you can 
+find kernel sources, but Samsung's changes are *not* well documented and it's
+totally unclear whether any of the changes were upstreamed. The good news,
+however, is that various usually means Qualcomm, and while Qualcomm's had it's
+own issues with Open Source support, for right now,
 
 ###Part Two: Fixing Compilation Errors
 

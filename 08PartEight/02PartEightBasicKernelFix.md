@@ -193,39 +193,39 @@ In order to craft your device's new defconfig. Before we begin, take a look at
 the arch/arm/configs/ folder in the source tree of your Linux kernel. If you 
 list the contents in a terminal, you'll see something like this. These are 
 
-        acs5k\_defconfig                   corgi\_defconfig        jornada720\_defconfig  pxa3xx\_defconfig
-        acs5k_tiny\_defconfig              cpu9260\_defconfig      kirkwood\_defconfig    pxa910\_defconfig
-        afeb9260\_defconfig                cpu9g20\_defconfig      kota2\_defconfig       qil-a9260\_defconfig
-        ag5evm\_defconfig                  da8xx_omapl\_defconfig  ks8695\_defconfig      raumfeld\_defconfig
-        am200epdkit\_defconfig             davinci_all\_defconfig  lart\_defconfig        realview\_defconfig
-        amazing3g_cdma_00\_defconfig       defconfig.patch        lpc32xx\_defconfig     realview-smp\_defconfig
-        ap4evb\_defconfig                  dove\_defconfig         lpd270\_defconfig      rpc\_defconfig
-        assabet\_defconfig                 ebsa110\_defconfig      lubbock\_defconfig     s3c2410\_defconfig
-        at91rm9200\_defconfig              edb7211\_defconfig      mackerel\_defconfig    s3c6400\_defconfig
-        at91sam9260\_defconfig             em_x270\_defconfig      magician\_defconfig    s5p64x0\_defconfig
-        at91sam9261\_defconfig             ep93xx\_defconfig       mainstone\_defconfig   s5pc100\_defconfig
-        at91sam9263\_defconfig             eseries_pxa\_defconfig  marzen\_defconfig      s5pv210\_defconfig
-        at91sam9g20\_defconfig             exynos4\_defconfig      mini2440\_defconfig    sam9_l9260\_defconfig
-        at91sam9g45\_defconfig             ezx\_defconfig          mmp2\_defconfig        shannon\_defconfig
-        at91sam9rl\_defconfig              footbridge\_defconfig   msm\_defconfig         shark\_defconfig
-        at91x40\_defconfig                 fortunet\_defconfig     mv78xx0\_defconfig     simpad\_defconfig
-        badge4\_defconfig                  g3evm\_defconfig        mxs\_defconfig         spear3xx\_defconfig
-        bcmring\_defconfig                 g4evm\_defconfig        neponset\_defconfig    spear6xx\_defconfig
-        bonito\_defconfig                  h3600\_defconfig        netwinder\_defconfig   spitz\_defconfig
-        cam60\_defconfig                   h5000\_defconfig        netx\_defconfig        stamp9g20\_defconfig
-        cerfcube\_defconfig                h7201\_defconfig        nhk8815\_defconfig     tct_hammer\_defconfig
-        cm_schS738c\_defconfig             h7202\_defconfig        nuc910\_defconfig      tegra\_defconfig
-        cm_schS738c\_defconfig.Ath9khtc    hackkit\_defconfig      nuc950\_defconfig      trizeps4\_defconfig
-        cm_schS738c\_defconfig.MSMotg      imote2\_defconfig       nuc960\_defconfig      u300\_defconfig
-        cm_schS738c\_defconfig.OLDVERSION  imx_v4_v5\_defconfig    omap1\_defconfig       u8500\_defconfig
-        cm_schS738c\_defconfig.reloaded    imx_v6_v7\_defconfig    omap2plus\_defconfig   usb-a9260\_defconfig
-        cm_schS738c\_defconfig.SELinux     integrator\_defconfig   orion5x\_defconfig     versatile\_defconfig
-        cm_x2xx\_defconfig                 iop13xx\_defconfig      palmz72\_defconfig     vexpress\_defconfig
-        cm_x300\_defconfig                 iop32x\_defconfig       pcm027\_defconfig      viper\_defconfig
-        cns3420vb\_defconfig               iop33x\_defconfig       pleb\_defconfig        xcep\_defconfig
-        colibri_pxa270\_defconfig          ixp2000\_defconfig      pnx4008\_defconfig     zeus\_defconfig
-        colibri_pxa300\_defconfig          ixp23xx\_defconfig      pxa168\_defconfig
-        collie\_defconfig                  ixp4xx\_defconfig       pxa255-idp\_defconfig
+        acs5k_defconfig                   corgi_defconfig        jornada720_defconfig  pxa3xx_defconfig
+        acs5k_tiny_defconfig              cpu9260_defconfig      kirkwood_defconfig    pxa910_defconfig
+        afeb9260_defconfig                cpu9g20_defconfig      kota2_defconfig       qil-a9260_defconfig
+        ag5evm_defconfig                  da8xx_omapl_defconfig  ks8695_defconfig      raumfeld_defconfig
+        am200epdkit_defconfig             davinci_all_defconfig  lart_defconfig        realview_defconfig
+        amazing3g_cdma_00_defconfig       defconfig.patch        lpc32xx_defconfig     realview-smp_defconfig
+        ap4evb_defconfig                  dove_defconfig         lpd270_defconfig      rpc_defconfig
+        assabet_defconfig                 ebsa110_defconfig      lubbock_defconfig     s3c2410_defconfig
+        at91rm9200_defconfig              edb7211_defconfig      mackerel_defconfig    s3c6400_defconfig
+        at91sam9260_defconfig             em_x270_defconfig      magician_defconfig    s5p64x0_defconfig
+        at91sam9261_defconfig             ep93xx_defconfig       mainstone_defconfig   s5pc100_defconfig
+        at91sam9263_defconfig             eseries_pxa_defconfig  marzen_defconfig      s5pv210_defconfig
+        at91sam9g20_defconfig             exynos4_defconfig      mini2440_defconfig    sam9_l9260_defconfig
+        at91sam9g45_defconfig             ezx_defconfig          mmp2_defconfig        shannon_defconfig
+        at91sam9rl_defconfig              footbridge_defconfig   msm_defconfig         shark_defconfig
+        at91x40_defconfig                 fortunet_defconfig     mv78xx0_defconfig     simpad_defconfig
+        badge4_defconfig                  g3evm_defconfig        mxs_defconfig         spear3xx_defconfig
+        bcmring_defconfig                 g4evm_defconfig        neponset_defconfig    spear6xx_defconfig
+        bonito_defconfig                  h3600_defconfig        netwinder_defconfig   spitz_defconfig
+        cam60_defconfig                   h5000_defconfig        netx_defconfig        stamp9g20_defconfig
+        cerfcube_defconfig                h7201_defconfig        nhk8815_defconfig     tct_hammer_defconfig
+        cm_schS738c_defconfig             h7202_defconfig        nuc910_defconfig      tegra_defconfig
+        cm_schS738c_defconfig.Ath9khtc    hackkit_defconfig      nuc950_defconfig      trizeps4_defconfig
+        cm_schS738c_defconfig.MSMotg      imote2_defconfig       nuc960_defconfig      u300_defconfig
+        cm_schS738c_defconfig.OLDVERSION  imx_v4_v5_defconfig    omap1_defconfig       u8500_defconfig
+        cm_schS738c_defconfig.reloaded    imx_v6_v7_defconfig    omap2plus_defconfig   usb-a9260_defconfig
+        cm_schS738c_defconfig.SELinux     integrator_defconfig   orion5x_defconfig     versatile_defconfig
+        cm_x2xx_defconfig                 iop13xx_defconfig      palmz72_defconfig     vexpress_defconfig
+        cm_x300_defconfig                 iop32x_defconfig       pcm027_defconfig      viper_defconfig
+        cns3420vb_defconfig               iop33x_defconfig       pleb_defconfig        xcep_defconfig
+        colibri_pxa270_defconfig          ixp2000_defconfig      pnx4008_defconfig     zeus_defconfig
+        colibri_pxa300_defconfig          ixp23xx_defconfig      pxa168_defconfig
+        collie_defconfig                  ixp4xx_defconfig       pxa255-idp_defconfig
 
 
 So let's take this step-by-step.

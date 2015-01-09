@@ -30,6 +30,24 @@ emphasize that in the case of any program where a proprietary component is the
 only option, the inclusion of these instructions is only so they may be used to
 implement a fully-free version when or wherever it is legal and possible.  
 
+How To Contribute
+=================
+This book is free-as-in-freedom and will always remain so. In case you don't 
+know, that means you are free and encouraged to report errors, contribute 
+chapters, create your own annotations, or even copy it in whole or in part to
+use in your own book. In doing so, you do agree to the terms of the [GNU Free Documentation License.](https://github.com/cmotc/android_porting_guidebook/blob/master/COPYING.MD)
+
+Fork and Translate
+------------------
+One of the most important things you could help with, regardless of computer
+skill, is providing accurate translations of the content of this book. For
+right now, the best way to do this is to create a fork of this repository and
+send me an issue whenever a chapter is translated. Then, a branch will be
+created for your language which will periodically be updated with the content of
+your fork.
+
+Donate
+------
 If you want to give some money to help with this project, you can do so via
 Bitcoin. 
 

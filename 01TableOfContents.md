@@ -30,7 +30,7 @@ Part Three : Manifests, git and Github
    * [A simple manifest project: Replace ClockWorkMod with Team Win Recovery Project](https://github.com/cmotc/android_porting_guidebook/blob/master/03PartThree/05PartThreeCWMtoTWRP.md)
    * An Absurdling Exhastive Breakdown of manifest.xml, Every Single Package In Brief
 
-Part Four : Extracting Proprietary Drivers
+Part Four : Extracting Device Information and Proprietary Drivers
 ------------------------------------------
    * [How to use dmesg to examine your hardware](https://github.com/cmotc/android_porting_guidebook/blob/master/04PartFour/01PartFourHowTodmesg.md)
    * [How to Build a recovery.fstab By Cross-Referencing Information about your partition table.](https://github.com/cmotc/android_porting_guidebook/blob/master/04PartFour/02PartFourHowToXRefPart.md)
@@ -53,7 +53,7 @@ Part Six : Compiling a ROM
 
 Part Seven : Debugging Compilation Errors
 -----------------------------------------
-   * 
+   * Basic Kernel Issue Resolution, and a Disclaimer.
    * 
    * 
    * 

@@ -101,7 +101,34 @@ or other. More on that later. For now, let's focus on getting ahold of the code
 you need.
 
 ####OK so this part kind of fucking sucks too
-Guess what?
+Hey you know what's confusing? When Samsung branded devices don't have Samsung
+parts inside. Like the Samsung Galaxy Centura. Definitely not an Exynos(Thank
+fuck) nearly every bit of this little bastard is designed by Qualcomm. It's got
+an MSM7627A processor(or 7x27A in CyanogenMod and Linux Kernel parlance) an
+Atheros 6kl Wireless Card, an Adreno GPU and a Hexagon Digital Signal Processor.
+Like, nothing Samsung about it at all. So when you're presented with a table
+like this one
+
+Original Equipment Manufacturer | Platform | Repositories
+--------------------------------|----------|-------------
+Google                          | various  | [Google Git](https://android.googlesource.com/) [Nexus Blobs](https://developers.google.com/android/nexus/drivers)
+HTC                             | various  | [HTC Dev Center](http://htcdev.com/devcenter/)
+HP                              | various  | [HP Open Source](http://www.hp.com/software/opensource)
+Lenovo                          | various  | [Lenovo Smartphones](http://www.hp.com/software/opensource)
+LG                              | various  | [LG Open Source](http://www.lg.com/global/support/opensource/index/)
+Motorola                        | various  | [Motorola Open Source](http://sourceforge.net/motorola)
+Nvidia                          | Tegra    | [Tegra Gitweb](http://nv-tegra.nvidia.com/gitweb/)
+Qualcomm                        | MSM/QSD  | [Code Aurora Forum](https://www.codeaurora.org/)
+Samsung                         | various  | [Samsung Open Source](http://opensource.samsung.com/)
+Texas Instruments               | OMAP     | [OmapZoom](http://www.omapzoom.com/) [Omappedia](http://www.omappedia.org/)
+Source:[http://wiki.cyanogenmod.org/w/Doc:_porting_intro#Getting_help_from_the_manufacturers_.26_vendors](http://wiki.cyanogenmod.org/w/Doc:_porting_intro#Getting_help_from_the_manufacturers_.26_vendors)  
+it can be a little hard to figure out what the hell to do. And check this out.
+Click that Samsung link up there and open it in a new tab. Now click the 
+CodeAurora forum link. Now click the Google source code link. Wildly disparate,
+right?
+
+
+
 
 ###Part Two: Fixing Compilation Errors
 

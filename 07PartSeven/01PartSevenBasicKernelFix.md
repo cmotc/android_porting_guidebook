@@ -62,9 +62,11 @@ the kernel and deal with the sections of the code which don't work because of
 some peculiarity of your system. And while it's not *likely*, a mistake in this
 process can *potentially* make your device unfixable. And there's good news, you
 can even usually recover from a bad flash. Like, 95% of the time, you're not
-going to wind up with an unfixable device. 
+going to wind up with an unfixable device.
 
 So go carefully forward.
+
+And one final note, please write documentation and put it online somewhere.
 
 Without Further Ado
 -------------------

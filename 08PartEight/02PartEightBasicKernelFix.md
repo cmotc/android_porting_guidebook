@@ -189,7 +189,46 @@ In this section, you'll be using some software that I haven't explained before.
   * menuconfig
   * ./scripts/kconfig/merge_config.sh
 
+In order to craft your device's new defconfig. Before we begin, take a look at
+the arch/arm/configs/ folder in the source tree of your Linux kernel. If you 
+list the contents in a terminal, you'll see something like this. These are 
 
+        acs5k\_defconfig                   corgi\_defconfig        jornada720\_defconfig  pxa3xx\_defconfig
+        acs5k_tiny\_defconfig              cpu9260\_defconfig      kirkwood\_defconfig    pxa910\_defconfig
+        afeb9260\_defconfig                cpu9g20\_defconfig      kota2\_defconfig       qil-a9260\_defconfig
+        ag5evm\_defconfig                  da8xx_omapl\_defconfig  ks8695\_defconfig      raumfeld\_defconfig
+        am200epdkit\_defconfig             davinci_all\_defconfig  lart\_defconfig        realview\_defconfig
+        amazing3g_cdma_00\_defconfig       defconfig.patch        lpc32xx\_defconfig     realview-smp\_defconfig
+        ap4evb\_defconfig                  dove\_defconfig         lpd270\_defconfig      rpc\_defconfig
+        assabet\_defconfig                 ebsa110\_defconfig      lubbock\_defconfig     s3c2410\_defconfig
+        at91rm9200\_defconfig              edb7211\_defconfig      mackerel\_defconfig    s3c6400\_defconfig
+        at91sam9260\_defconfig             em_x270\_defconfig      magician\_defconfig    s5p64x0\_defconfig
+        at91sam9261\_defconfig             ep93xx\_defconfig       mainstone\_defconfig   s5pc100\_defconfig
+        at91sam9263\_defconfig             eseries_pxa\_defconfig  marzen\_defconfig      s5pv210\_defconfig
+        at91sam9g20\_defconfig             exynos4\_defconfig      mini2440\_defconfig    sam9_l9260\_defconfig
+        at91sam9g45\_defconfig             ezx\_defconfig          mmp2\_defconfig        shannon\_defconfig
+        at91sam9rl\_defconfig              footbridge\_defconfig   msm\_defconfig         shark\_defconfig
+        at91x40\_defconfig                 fortunet\_defconfig     mv78xx0\_defconfig     simpad\_defconfig
+        badge4\_defconfig                  g3evm\_defconfig        mxs\_defconfig         spear3xx\_defconfig
+        bcmring\_defconfig                 g4evm\_defconfig        neponset\_defconfig    spear6xx\_defconfig
+        bonito\_defconfig                  h3600\_defconfig        netwinder\_defconfig   spitz\_defconfig
+        cam60\_defconfig                   h5000\_defconfig        netx\_defconfig        stamp9g20\_defconfig
+        cerfcube\_defconfig                h7201\_defconfig        nhk8815\_defconfig     tct_hammer\_defconfig
+        cm_schS738c\_defconfig             h7202\_defconfig        nuc910\_defconfig      tegra\_defconfig
+        cm_schS738c\_defconfig.Ath9khtc    hackkit\_defconfig      nuc950\_defconfig      trizeps4\_defconfig
+        cm_schS738c\_defconfig.MSMotg      imote2\_defconfig       nuc960\_defconfig      u300\_defconfig
+        cm_schS738c\_defconfig.OLDVERSION  imx_v4_v5\_defconfig    omap1\_defconfig       u8500\_defconfig
+        cm_schS738c\_defconfig.reloaded    imx_v6_v7\_defconfig    omap2plus\_defconfig   usb-a9260\_defconfig
+        cm_schS738c\_defconfig.SELinux     integrator\_defconfig   orion5x\_defconfig     versatile\_defconfig
+        cm_x2xx\_defconfig                 iop13xx\_defconfig      palmz72\_defconfig     vexpress\_defconfig
+        cm_x300\_defconfig                 iop32x\_defconfig       pcm027\_defconfig      viper\_defconfig
+        cns3420vb\_defconfig               iop33x\_defconfig       pleb\_defconfig        xcep\_defconfig
+        colibri_pxa270\_defconfig          ixp2000\_defconfig      pnx4008\_defconfig     zeus\_defconfig
+        colibri_pxa300\_defconfig          ixp23xx\_defconfig      pxa168\_defconfig
+        collie\_defconfig                  ixp4xx\_defconfig       pxa255-idp\_defconfig
+
+
+So let's take this step-by-step.
 
 ###Part Three: Fixing Compilation Errors
 

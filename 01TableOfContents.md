@@ -53,7 +53,7 @@ Part Six : Compiling a ROM
 
 Part Seven : Debugging Compilation Errors
 -----------------------------------------
-   * Basic Kernel Issue Resolution, and a Disclaimer.
+   * 
    * 
    * 
    * 
@@ -61,6 +61,7 @@ Part Seven : Debugging Compilation Errors
 Part Eight : Compiling a Kernel
 -------------------------------
    * Kernel Hacking for people some would say probably shouldn't be doing it.
+   * [Basic Kernel Issue Resolution, and a Disclaimer.](https://github.com/cmotc/android_porting_guidebook/blob/master/08PartEight/02PartEightBasicKernelFix.md)
    * Setting up Automated Kernel Building for Cyanogenmod 10 or greater
    * Backporting Kernels for devices
    * 

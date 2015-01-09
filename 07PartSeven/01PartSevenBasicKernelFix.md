@@ -140,7 +140,24 @@ But the moral of that whole story is that the actual hardware may not, and in
 fact probably does not, correspond to the brand name. We've already figured it
 out back in Chapter Two, but now let's go into more detail as to what that
 means. In case you haven't done it already, go ahead and pull your build.prop
-from your device. You're going to need to look for a line
+from your device. You're going to need to look for a line that says 
+ro.board.platform or ro.product.board. For example, the first and last lines of
+of the following snippet contain the first bits of information we'll need.
+
+        ro.product.board=7x27
+        ro.product.cpu.abi=armeabi-v7a
+        ro.product.cpu.abi2=armeabi
+        ro.product.manufacturer=samsung
+        ro.product.locale.language=en
+        ro.product.locale.region=US
+        ro.wifi.channels=
+        ro.board.platform=msm7627a
+
+In this case, we have a Qualcomm MSM7627A CPU. What a coincidence, that's the
+phone I'm writing this book on. You might have a different sort of device.
+
+If you can't find your processor in my explanation above, try looking [here](http://pdadb.net/index.php?m=cpu)
+for the processor in that list, and you can cross-reference the manufacturer.
 
 ###Part Two: Fixing Compilation Errors
 

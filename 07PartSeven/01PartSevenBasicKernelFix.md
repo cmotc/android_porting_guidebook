@@ -154,31 +154,51 @@ of the following snippet contain the first bits of information we'll need.
         ro.board.platform=msm7627a
 
 In this case, we have a Qualcomm MSM7627A CPU. What a coincidence, that's the
-phone I'm writing this book on. You might have a different sort of device.
+phone I'm writing this book on. You might have a different sort of device. For
+instance, if you have an Exynos device, it will say something like "S5P." 
+MediaTek hardware starts with "MT" or "MTK". Texas Instruments hardware starts
+with "OMAP." AllWinner hardware is usually just 3 letters, and it is almost
+always one of the following "A10" "A20" "A31" "A31s" "A33." So check out the
+repository for the Linux kernel appropriate for your hardware by the actual
+manufacturer, without undue regard for the name on the label, by
+
+  * finding a git repository for the real manufacturer of the device
+  * and cloning the best-fit stable Android Kernel branch for the Android Version you want to compile.
+
+For example, to clone version 3.4.0 of the aosp-common branch of the Code Aurora
+Android Kernel, do:
+
+        git clone git://codeaurora.org/quic/la/kernel/msm -b aosp-common/android-3.4
 
 If you can't find your processor in my explanation above, try looking [here](http://pdadb.net/index.php?m=cpu)
 for the processor in that list, and you can cross-reference the manufacturer.
 
-###Part Two: Fixing Compilation Errors
+###Part Two: Configuring Your Kernel
+Once you have that essential information, you'll need to get the rest of the
+essential hardware information for your phone. [pdadb.net](http://pdadb.net) is
+a good place to start. As a general rule, GPU's and CPU's on the same chip tend
+to be designed by the same companies, so an MSM board will probably have an
+Adreno GPU and a Hexagon DSP, *but not always*. One place where it's often 
+difficult to deduce the type of hardware is with the WiFi, which is why there's
+a whole [section on it in Chapter 4](https://github.com/cmotc/android_porting_guidebook/blob/master/04PartFour/01PartFourHowTodmesg.md). 
+That information is even more important for this chapter, so make sure you know
+as much as possible about your kernel.
+
+In this section, you'll be using some software that I haven't explained before.
+
+  * menuconfig
+  * ./scripts/kconfig/merge_config.sh
+
+
+
+###Part Three: Fixing Compilation Errors
 
   + 
-  + 
-  + 
-  + 
-  + 
 
-###Part Three: Backporting Stuff
+###Part Four: Backporting Stuff
 
   + 
-  + 
-  + 
-  + 
-  + 
 
-###Part Four: Choose Open Source
+###Part Five: Choose Open Source
 
-  + 
-  + 
-  + 
-  + 
   + 
